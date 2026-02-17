@@ -7,49 +7,71 @@ export default function Hero() {
   const t = useTranslations('Hero');
 
   return (
-    <section className="relative px-6 text-center h-[calc(100vh-80px)] flex items-center w-full">
-      {/* 背景オーバーレイ */}
-      <div className="absolute inset-0 z-0 bg-slate-900 opacity-70"></div>
+    <section className="relative min-h-[calc(100vh-64px)] flex items-center justify-center overflow-hidden">
+      {/* Background grid pattern */}
+      <div className="absolute inset-0 grid-bg" />
 
-      {/* 背景画像 */}
-      <div className="absolute inset-0 z-0 opacity-50 mix-blend-overlay">
+      {/* Gradient orbs */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/8 rounded-full blur-3xl" />
+
+      {/* Background image placeholder */}
+      <div className="absolute inset-0 z-0 opacity-10">
         <img
           src="/hero-bg.png"
-          alt="Hero background"
+          alt=""
           className="w-full h-full object-cover object-center"
         />
       </div>
 
-      {/* Content with relative positioning to appear above overlay */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
-          {t('title1')}
-          <br />
-          {t('title2')}
-          <br />
-          <span className="primary-text-light">{t('title3')}</span>{t('title4')}
+      <div className="relative z-10 w-full max-w-4xl mx-auto px-6 text-center">
+        {/* Main headline */}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 tracking-tight">
+          {t('headline')}
         </h1>
-        <p className="text-xl md:text-2xl text-gray-100 mb-12 max-w-3xl mx-auto leading-relaxed">
-          {t('description1')}
-          <br />
-          {t('description2')}
+
+        {/* Japanese sub-headline */}
+        <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+          {t('headlineJa')}
         </p>
+
+        {/* Name & Role */}
+        <div className="mb-10">
+          <h2 className="text-xl md:text-2xl font-semibold gradient-text mb-2">
+            {t('name')}
+          </h2>
+          <p className="text-sm md:text-base text-gray-400">
+            {t('role')}
+          </p>
+          <p className="text-sm text-gray-500 mt-1">
+            {t('affiliation')}
+          </p>
+        </div>
+
+        {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button
             asChild
             size="lg"
-            className="bg-blue-600 text-white hover:bg-blue-700 hover:shadow-xl transition-all transform hover:scale-105"
+            className="bg-blue-600 text-white hover:bg-blue-500 transition-all px-8"
           >
-            <a href="#contents">{t('viewSolutions')}</a>
+            <a href="#portfolio">{t('ctaPrimary')}</a>
           </Button>
           <Button
             asChild
             variant="outline"
             size="lg"
-            className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-gray-900 transition-all"
+            className="border border-gray-700 text-gray-300 bg-transparent hover:bg-gray-800 hover:text-white transition-all px-8"
           >
-            <a href="#contact">{t('consult')}</a>
+            <a href="#vision">{t('ctaSecondary')}</a>
           </Button>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="w-5 h-8 border-2 border-gray-600 rounded-full flex justify-center pt-1.5">
+          <div className="w-1 h-2 bg-gray-500 rounded-full" />
         </div>
       </div>
     </section>

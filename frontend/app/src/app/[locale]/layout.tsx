@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title: messages.Metadata.title,
       description: messages.Metadata.description,
       url: `${domain}/${locale}/`,
-      siteName: messages.Header.company,
+      siteName: messages.Header.name,
       images: [
         {
           url: `${domain}/og-image.png`,
@@ -68,11 +68,12 @@ export default async function LocaleLayout({
 
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: t.Header?.company || 'Company Name',
+    '@type': 'Person',
+    name: 'Kosei Osawa',
     url: domain,
     logo: `${domain}/logo.png`,
     description: t.Metadata?.description,
+    jobTitle: 'Tech Lead & Physical AI Architect',
   };
 
   return (

@@ -1,97 +1,138 @@
 {
   "Header": {
-    "company": "Company",
-    "solutions": "Solutions",
-    "about": "About",
+    "name": "Kosei Osawa",
+    "projects": "Projects",
+    "vision": "Vision",
+    "timeline": "Timeline",
     "contact": "Contact"
   },
   "Hero": {
-    "title1": "Maximize",
-    "title2": "Business Potential",
-    "title3": "with Technology",
-    "title4": "",
-    "description1": "Combining cutting-edge technology with business insights,",
-    "description2": "we are a technology company that supports corporate problem-solving and growth.",
-    "viewSolutions": "View Solutions",
-    "consult": "Consult Us"
+    "headline": "Bridging Economics, Deep Tech, and Implementation.",
+    "headlineJa": "Architecting Physical AI for real-world deployment, through the lens of economics and engineering.",
+    "name": "Kosei Osawa",
+    "role": "Tech Lead & Physical AI Architect",
+    "affiliation": "Kyoto Univ. Economics | NEDO NEP Fellow",
+    "ctaPrimary": "View Projects",
+    "ctaSecondary": "Read Vision"
   },
-  "Contents": {
-    "title": "Our Solutions",
-    "description": "Solve your business challenges with practical AI-powered solutions",
-    "reportTool": {
-      "title": "Report Automation Tool",
-      "description": "A web application that automates everything from data analysis to report generation, streamlining your decision-making process.",
-      "feature1": "Data Visualization & Analysis",
-      "feature2": "AI-Driven Report Generation",
-      "feature3": "Custom Dashboards",
-      "status": "In Development"
-    },
-    "mobileApp": {
-      "title": "Mobile App Development",
-      "description": "Design and development of mobile applications integrating machine learning, image recognition, and natural language processing.",
-      "feature1": "iOS/Android/Web Support",
-      "feature2": "Real-time Image Recognition",
-      "feature3": "Personalization"
-    },
-    "customSolution": {
-      "title": "Custom Solutions",
-      "description": "Building custom systems and chatbots utilizing the latest technologies.",
-      "feature1": "Enterprise Chatbots",
-      "feature2": "Automated Document Generation & Summarization",
-      "feature3": "API Integration Support"
-    }
+  "Vision": {
+    "title": "Innovating the Physical World",
+    "subtitle": "Driving both \"technology implementation\" and \"ecosystem creation\" in tandem.",
+    "description": "I am working on the social implementation of \"Physical AI\" — autonomous systems operating in the physical world — to address Japan's structural challenge of labor shortages. My activities are structured around two axes: the \"KVT Project,\" which aims at technology implementation and commercialization, and \"KUPAC,\" a Physical AI ecosystem originating from Kyoto.",
+    "strategyTitle": "Strategy: The Two Engines",
+    "kupacLabel": "KUPAC: The Ecosystem",
+    "kupacName": "Kyoto University Physical AI Community",
+    "kupacTagline": "Sustainable innovation ground where technology meets real-world challenges",
+    "kupacDescription": "KUPAC is not just a student organization. It is a Physical AI-focused ecosystem that connects the advanced research knowledge of Kyoto University with the industrial challenges of leading companies in the Kansai region.",
+    "kupacStat1Label": "Scale",
+    "kupacStat1Value": "Nearly 300 participants within 6 months of founding (students, researchers, engineers, companies)",
+    "kupacStat2Label": "Trust",
+    "kupacStat2Value": "Endorsed by Kyoto University's Growth Strategy Division; incorporated as KUPAC LLC",
+    "kupacStat3Label": "Role",
+    "kupacStat3Value": "Physical AI talent development, knowledge sharing, and joint research & technology validation",
+    "kvtLabel": "KVT Project: The Spearhead",
+    "kvtName": "Keihanna Vision Tech Project (NEDO NEP)",
+    "kvtTagline": "A social implementation model born from KUPAC",
+    "kvtDescription": "KVT, where I serve as project leader, is a flagship project that embodies KUPAC's philosophy. We tackle labor shortages that software alone cannot solve by fusing AI with robotics.",
+    "kvtStat1Label": "Impact",
+    "kvtStat1Value": "Selected for NEDO NEP Frontier Course 2025",
+    "kvtStat2Label": "Tech",
+    "kvtStat2Value": "Full-scratch development of a dual-arm robot for Physical AI social implementation",
+    "kvtStat3Label": "Goal",
+    "kvtStat3Value": "Present a model case where technology solves social challenges, as a startup from KUPAC"
   },
-  "About": {
-    "title": "About Us",
-    "description": "We bridge the gap between technology and business challenges, providing practical and valuable solutions. Our team, equipped with both technical expertise and implementation capabilities, supports your success.",
-    "stats": {
-      "foundedYear": "Founded",
-      "projects": "Projects",
-      "members": "Members",
-      "support": "Support"
-    },
-    "features": {
-      "technology": {
-        "title": "Technical Excellence",
-        "description": "Robust system development leveraging cutting-edge technologies including Next.js, Python, and cloud infrastructure."
-      },
-      "practicality": {
-        "title": "Practicality",
-        "description": "Realistic solution proposals that prioritize business value and feasibility, not just technical possibilities."
-      },
-      "quality": {
-        "title": "Quality",
-        "description": "High-quality software development through code reviews, test-driven development, and continuous integration."
-      }
-    }
+  "Portfolio": {
+    "title": "Technical Portfolio",
+    "subtitle": "Proving full-stack capability across 6 pillars — from Web to low-level to robotics",
+    "webTitle": "Web Applications",
+    "webItem1Title": "Repot",
+    "webItem1Desc": "Generative AI SaaS with user registration and payment features. Full serverless architecture centered on AWS Lambda + Terraform IaC. Achieved ~100 MAU",
+    "webItem1Status": "Under Maintenance",
+    "webItem2Title": "KUPAC Official",
+    "webItem2Desc": "Website operations as community infrastructure, SEO optimization, Discord app integration, etc.",
+    "nativeTitle": "Native & Cross-Platform",
+    "nativeItem1Title": "4Hack",
+    "nativeItem1Desc": "React Native app with custom Native Modules (Swift/Kotlin) utilizing OS features like NFC/Overlay. App store release planned for April 2026.",
+    "nativeItem2Title": "Anomaly Sound Detection App",
+    "nativeItem2Desc": "Desktop application built with WPF for dashboard display of results and data collection",
+    "nativeItem2Status": "CLOSED",
+    "systemTitle": "System Programming & Architecture",
+    "systemItem1Title": "Basys3-Hack-PC",
+    "systemItem1Desc": "Calculator including CPU and IO designed and implemented in HDL on FPGA",
+    "systemItem2Title": "Native WebGPU Engine",
+    "systemItem2Desc": "Prototype USD rendering engine using Google Dawn (C++)",
+    "infraTitle": "Network & Infrastructure",
+    "infraItem1Title": "Hybrid Cloud Gateway",
+    "infraItem1Desc": "Secure configuration hiding home IP with AWS Route53 + CloudFront + Nginx",
+    "infraItem2Title": "Cloud Native RAG Infrastructure",
+    "infraItem2Desc": "Low-cost operational RAG infrastructure using AWS S3 Vector store + Bedrock Knowledge base",
+    "infraItem2Status": "CLOSED",
+    "aiTitle": "AI Engineering & ML Systems",
+    "aiItem1Title": "Visual Inspection System for Manufacturing",
+    "aiItem1Desc": "Visual inspection system for manufacturing using object detection and OCR",
+    "aiItem1Status": "CLOSED",
+    "aiItem2Title": "Local GenAI",
+    "aiItem2Desc": "Locally-contained multimodal generation environment using low-level libraries",
+    "roboticsTitle": "Robotics & Autonomous Systems",
+    "roboticsItem1Title": "NHK Student Robocon 2025",
+    "roboticsItem1Desc": "Robot system development using microcontrollers and ROS 2",
+    "roboticsItem2Title": "Custom Autonomy Stack",
+    "roboticsItem2Desc": "Full-scratch autonomous driving algorithm + simulator in C++"
+  },
+  "Timeline": {
+    "title": "Career Timeline",
+    "subtitle": "Extraordinary growth velocity and leadership in a short period",
+    "e1Date": "2023.03",
+    "e1Text": "Graduated from Tokyo Metropolitan Toyama High School",
+    "e2Date": "2023.04",
+    "e2Text": "Enrolled in Kyoto University, Faculty of Economics",
+    "e3Date": "2024.03",
+    "e3Text": "Appointed Vice President of Kyoto University Mechanical Engineering Club",
+    "e4Date": "2024.04",
+    "e4Text": "Worked as OA at Morimoto Lab, Graduate School of Informatics, Kyoto University — Physical AI research",
+    "e5Date": "2024.04",
+    "e5Text": "Appointed as NEDO NEP Frontier Course 2025 Fellow Researcher",
+    "e6Date": "2024.08",
+    "e6Text": "Worked as AI Engineer at ProxIndustries Inc., a Matsuo Lab spinoff startup",
+    "e7Date": "2025.04",
+    "e7Text": "Worked as Tech Lead at ONIXION Inc.",
+    "e8Date": "2025.06",
+    "e8Text": "Competed in NHK Student Robocon",
+    "e9Date": "2025.07",
+    "e9Text": "Founded KUPAC (Kyoto University Physical AI Community), appointed as Representative",
+    "e10Date": "2025.10",
+    "e10Text": "Established KUPAC LLC, appointed as Representative Member"
   },
   "Contact": {
-    "title": "Contact Us",
-    "description": "Feel free to consult us about solution development utilizing AI technology",
-    "consultTitle": "We welcome consultations like these",
-    "consult1": "Discuss business efficiency improvements using technology",
-    "consult2": "Add new features to existing systems",
-    "consult3": "Consider developing new applications",
-    "consult4": "Verify technical feasibility",
-    "email": "Email",
-    "businessHours": "Business Hours",
-    "businessHoursValue": "Weekdays 9:00-18:00",
-    "businessHoursNote": "(Inquiries on weekends and holidays will be answered on the next business day)",
-    "responseTime": "We will respond within 24 hours of your inquiry"
+    "title": "Contact",
+    "description": "I welcome inquiries about research, technology validation in the Physical AI domain, and sponsorship for KUPAC.",
+    "emailLabel": "Email",
+    "emailPersonalLabel": "Personal",
+    "emailPersonal": "n622jwith@gmail.com",
+    "emailBusinessLabel": "Business",
+    "emailBusiness": "k-osawa@kupac.org",
+    "githubLabel": "GitHub",
+    "github": "OsawaKousei",
+    "twitterLabel": "X (Twitter)",
+    "twitter": "@sawa__622",
+    "qiitaLabel": "Qiita",
+    "qiita": "@N622"
   },
   "Footer": {
-    "companyDescription": "We bridge the gap between technology and business challenges, providing practical solutions.",
-    "services": "Services",
-    "reportSupport": "Report Support",
-    "mobileAppDev": "Mobile App Development",
-    "techSolutions": "Technology Solutions",
-    "companyInfo": "Company Info",
-    "aboutUs": "About Us",
-    "contactUs": "Contact",
-    "copyright": "© 2024 Company Name. All rights reserved."
+    "description": "Bridging Economics, Deep Tech, and Implementation.",
+    "sections": "Sections",
+    "vision": "Vision",
+    "projects": "Projects",
+    "timeline": "Timeline",
+    "contact": "Contact",
+    "links": "Links",
+    "github": "GitHub",
+    "twitter": "X (Twitter)",
+    "qiita": "Qiita",
+    "copyright": "© 2025 Kosei Osawa. All rights reserved."
   },
   "Metadata": {
-    "title": "Company Name - Modern Solutions",
-    "description": "AI-powered solutions for your business. We provide innovative technology solutions to drive growth and efficiency."
+    "title": "Kosei Osawa - Physical AI Architect",
+    "description": "Architecting Physical AI for real-world deployment, through the lens of economics and engineering. Tech Lead & Physical AI Architect | Kyoto Univ. Economics | NEDO NEP Fellow"
   }
 }

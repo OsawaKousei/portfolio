@@ -1,97 +1,138 @@
 {
   "Header": {
-    "company": "Company",
-    "solutions": "ソリューション",
-    "about": "会社概要",
-    "contact": "お問い合わせ"
+    "name": "Kosei Osawa",
+    "projects": "Projects",
+    "vision": "Vision",
+    "timeline": "Timeline",
+    "contact": "Contact"
   },
   "Hero": {
-    "title1": "テクノロジーで",
-    "title2": "ビジネスの可能性を",
-    "title3": "最大化",
-    "title4": "する",
-    "description1": "最新の技術とビジネス知見を組み合わせ、",
-    "description2": "企業の課題解決と成長を支援するテクノロジー企業です。",
-    "viewSolutions": "ソリューションを見る",
-    "consult": "相談する"
+    "headline": "Bridging Economics, Deep Tech, and Implementation.",
+    "headlineJa": "経済学的視点とエンジニアリングで、フィジカルAIの社会実装を。",
+    "name": "Kosei Osawa",
+    "role": "Tech Lead & Physical AI Architect",
+    "affiliation": "Kyoto Univ. Economics | NEDO NEP Fellow",
+    "ctaPrimary": "View Projects",
+    "ctaSecondary": "Read Vision"
   },
-  "Contents": {
-    "title": "提供ソリューション",
-    "description": "AI技術を活用した実用的なソリューションで、お客様のビジネス課題を解決します",
-    "reportTool": {
-      "title": "レポート自動化ツール",
-      "description": "データ分析からレポート生成まで自動化し、意思決定プロセスを効率化するWebアプリケーション。",
-      "feature1": "データ可視化・分析",
-      "feature2": "AI駆動レポート生成",
-      "feature3": "カスタムダッシュボード",
-      "status": "開発中"
-    },
-    "mobileApp": {
-      "title": "モバイルアプリ開発",
-      "description": "機械学習、画像認識、自然言語処理を統合したモバイルアプリケーションの設計・開発。",
-      "feature1": "iOS/Android/Web対応",
-      "feature2": "リアルタイム画像認識",
-      "feature3": "パーソナライゼーション"
-    },
-    "customSolution": {
-      "title": "カスタムソリューション",
-      "description": "最新技術を活用したカスタムシステム、チャットボットの構築。",
-      "feature1": "企業向けチャットボット",
-      "feature2": "文書自動生成・要約",
-      "feature3": "API統合サポート"
-    }
+  "Vision": {
+    "title": "Innovating the Physical World",
+    "subtitle": "「技術の実装」と「場の創造」を両輪で回す。",
+    "description": "私は、人手不足という日本の構造的な課題に対し、物理世界で自律的に動く「フィジカルAI」の社会実装に取り組んでいます。私の活動は、技術の実装と事業化を目指す「KVT Project」と、京都発のフィジカルAIエコシステムである「KUPAC」の2軸で構成されています。",
+    "strategyTitle": "Strategy: The Two Engines",
+    "kupacLabel": "KUPAC: The Ecosystem",
+    "kupacName": "Kyoto University Physical AI Community",
+    "kupacTagline": "「技術」と「課題」が出会う、持続可能なイノベーションの土壌",
+    "kupacDescription": "KUPACは、単なる学生団体ではありません。京都大学の高度な研究知見と、関西圏の有力企業の産業課題を接続する「フィジカルAI特化型のエコシステム」です。",
+    "kupacStat1Label": "Scale",
+    "kupacStat1Value": "設立半年で300名に迫る参画者（学生・研究者・エンジニア・企業）",
+    "kupacStat2Label": "Trust",
+    "kupacStat2Value": "京都大学成長戦略本部の後援を獲得、合同会社KUPACとして法人化",
+    "kupacStat3Label": "Role",
+    "kupacStat3Value": "フィジカルAI人材の育成、技術知見の共有、共同研究・技術実証の組成",
+    "kvtLabel": "KVT Project: The Spearhead",
+    "kvtName": "Keihanna Vision Tech Project (NEDO NEP)",
+    "kvtTagline": "KUPAC発の「社会実装モデル」",
+    "kvtDescription": "私自身がプロジェクトリーダーを務めるKVTは、KUPACの理念を体現する先導プロジェクトです。「ソフトウェアだけでは解決できない人手不足」に対し、AIとロボティクスを融合させて挑んでいます。",
+    "kvtStat1Label": "Impact",
+    "kvtStat1Value": "国立研究開発法人NEDO「NEP 開拓コース 2025」採択事業",
+    "kvtStat2Label": "Tech",
+    "kvtStat2Value": "フィジカルAIの社会実装に向け、双腕ロボットをフルスクラッチ開発",
+    "kvtStat3Label": "Goal",
+    "kvtStat3Value": "KUPAC発のスタートアップとして、技術が社会課題を解決するモデルケースを提示する"
   },
-  "About": {
-    "title": "私たちについて",
-    "description": "技術とビジネス課題の架け橋となり、実用的で価値のあるソリューションを提供します。技術力と実装力を兼ね備えたチームが、お客様の成功をサポートします。",
-    "stats": {
-      "foundedYear": "結成年",
-      "projects": "開発プロジェクト",
-      "members": "メンバー",
-      "support": "サポート"
-    },
-    "features": {
-      "technology": {
-        "title": "技術力",
-        "description": "最新の技術を駆使し、Next.js、Python、クラウドインフラを活用した堅牢なシステム開発。"
-      },
-      "practicality": {
-        "title": "実用性",
-        "description": "技術的な可能性だけでなく、ビジネス価値と実装可能性を重視した現実的なソリューション提案。"
-      },
-      "quality": {
-        "title": "品質",
-        "description": "コードレビュー、テスト駆動開発、継続的インテグレーションによる高品質なソフトウェア開発。"
-      }
-    }
+  "Portfolio": {
+    "title": "Technical Portfolio",
+    "subtitle": "6つの柱でフルスタック能力（Web〜低レイヤー〜ロボット）を証明する",
+    "webTitle": "Web Applications",
+    "webItem1Title": "Repot",
+    "webItem1Desc": "生成AI SaaS、ユーザー登録・決済機能付き。AWS Lambdaを中心としたフルサーバーレス構成 + Terraform IaC。約100人のMAUを獲得",
+    "webItem1Status": "メンテナンス中",
+    "webItem2Title": "KUPAC Official",
+    "webItem2Desc": "コミュニティ基盤としてのウェブサイト運用、SEO対策。Discordアプリ連携など",
+    "nativeTitle": "Native & Cross-Platform",
+    "nativeItem1Title": "4Hack",
+    "nativeItem1Desc": "Native Modules (Swift/Kotlin) を自作し、NFC/Overlay等のOS機能を活用したReact Nativeアプリ。2026年4月にアプリストアでリリース予定。",
+    "nativeItem2Title": "異音検知デスクトップアプリ",
+    "nativeItem2Desc": "WPFを用いたGUIで結果のダッシュボード表示やデータ収集などの機能を提供する",
+    "nativeItem2Status": "CLOSED",
+    "systemTitle": "System Programming & Architecture",
+    "systemItem1Title": "Basys3-Hack-PC",
+    "systemItem1Desc": "FPGA上にHDLで設計・実装したCPU及びIOを含む電卓",
+    "systemItem2Title": "Native WebGPU Engine",
+    "systemItem2Desc": "Google Dawn (C++) を用いたUSDレンダリングエンジンの試作",
+    "infraTitle": "Network & Infrastructure",
+    "infraItem1Title": "Hybrid Cloud Gateway",
+    "infraItem1Desc": "AWS Route53 + CloudFront + Nginxで自宅IPを隠蔽するセキュア構成",
+    "infraItem2Title": "Cloud Native RAG Infrastructure",
+    "infraItem2Desc": "AWS S3 Vector store + Bedrock Knowledge baseを使用した、低コストで運用可能なRAGインフラの構築",
+    "infraItem2Status": "CLOSED",
+    "aiTitle": "AI Engineering & ML Systems",
+    "aiItem1Title": "製造業向け外観検査システム",
+    "aiItem1Desc": "物体検出とOCRを用いた製造業向け外観検査システム",
+    "aiItem1Status": "CLOSED",
+    "aiItem2Title": "Local GenAI",
+    "aiItem2Desc": "低レベルライブラリを用いたローカル完結型マルチモーダル生成環境",
+    "roboticsTitle": "Robotics & Autonomous Systems",
+    "roboticsItem1Title": "NHK学生ロボコン2025",
+    "roboticsItem1Desc": "マイコンとROS 2を使用したロボットシステム開発",
+    "roboticsItem2Title": "Custom Autonomy Stack",
+    "roboticsItem2Desc": "C++フルスクラッチの自律走行アルゴリズム+シミュレーター"
+  },
+  "Timeline": {
+    "title": "Career Timeline",
+    "subtitle": "短期間での圧倒的な成長速度とリーダーシップ",
+    "e1Date": "2023.03",
+    "e1Text": "東京都立戸山高校卒業",
+    "e2Date": "2023.04",
+    "e2Text": "京都大学経済学部経済経営学科入学",
+    "e3Date": "2024.03",
+    "e3Text": "京大機械研究会副会長就任",
+    "e4Date": "2024.04",
+    "e4Text": "京都大学情報学研究科森本研究室にてOAとして勤務、フィジカルAI研究に従事",
+    "e5Date": "2024.04",
+    "e5Text": "NEDO NEP 開拓コース 2025 FRに任命",
+    "e6Date": "2024.08",
+    "e6Text": "AIエンジニアとして松尾研発スタートアップの株式会社ProxIndustriesに勤める",
+    "e7Date": "2025.04",
+    "e7Text": "テックリードとして株式会社ONIXIONに勤める",
+    "e8Date": "2025.06",
+    "e8Text": "NHK学生ロボコン出場",
+    "e9Date": "2025.07",
+    "e9Text": "KUPAC（Kyoto University Physical AI Community）設立、代表就任",
+    "e10Date": "2025.10",
+    "e10Text": "合同会社KUPAC設立、代表社員就任"
   },
   "Contact": {
-    "title": "お問い合わせ",
-    "description": "AI技術を活用したソリューション開発について、お気軽にご相談ください",
-    "consultTitle": "こんなご相談をお待ちしています",
-    "consult1": "技術を活用した業務効率化について相談したい",
-    "consult2": "既存システムに新機能を追加したい",
-    "consult3": "新規アプリケーションの開発を検討している",
-    "consult4": "技術的な実現可能性を確認したい",
-    "email": "メール",
-    "businessHours": "対応時間",
-    "businessHoursValue": "平日 9:00-18:00",
-    "businessHoursNote": "（土日祝日は翌営業日に返信いたします）",
-    "responseTime": "お問い合わせから24時間以内に返信いたします"
+    "title": "Contact",
+    "description": "フィジカルAI領域でのリサーチ、技術実証、およびKUPACへの協賛についてのご相談を受け付けております。",
+    "emailLabel": "Email",
+    "emailPersonalLabel": "個人",
+    "emailPersonal": "n622jwith@gmail.com",
+    "emailBusinessLabel": "法人",
+    "emailBusiness": "k-osawa@kupac.org",
+    "githubLabel": "GitHub",
+    "github": "OsawaKousei",
+    "twitterLabel": "X (Twitter)",
+    "twitter": "@sawa__622",
+    "qiitaLabel": "Qiita",
+    "qiita": "@N622"
   },
   "Footer": {
-    "companyDescription": "技術とビジネス課題の架け橋となり、実用的なソリューションを提供します。",
-    "services": "サービス",
-    "reportSupport": "レポート支援",
-    "mobileAppDev": "モバイルアプリ開発",
-    "techSolutions": "テクノロジーソリューション",
-    "companyInfo": "企業情報",
-    "aboutUs": "会社概要",
-    "contactUs": "お問い合わせ",
-    "copyright": "© 2024 Company Name. All rights reserved."
+    "description": "経済学的視点とエンジニアリングで、フィジカルAIの社会実装を。",
+    "sections": "Sections",
+    "vision": "Vision",
+    "projects": "Projects",
+    "timeline": "Timeline",
+    "contact": "Contact",
+    "links": "Links",
+    "github": "GitHub",
+    "twitter": "X (Twitter)",
+    "qiita": "Qiita",
+    "copyright": "© 2025 Kosei Osawa. All rights reserved."
   },
   "Metadata": {
-    "title": "Company Name - モダンソリューション",
-    "description": "ビジネスのためのAI駆動ソリューション。成長と効率性を推進する革新的な技術ソリューションを提供します。"
+    "title": "Kosei Osawa - Physical AI Architect",
+    "description": "経済学的視点とエンジニアリングで、フィジカルAIの社会実装を。Tech Lead & Physical AI Architect | Kyoto Univ. Economics | NEDO NEP Fellow"
   }
 }
