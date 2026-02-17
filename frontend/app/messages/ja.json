@@ -1,0 +1,97 @@
+{
+  "Header": {
+    "company": "Company",
+    "solutions": "ソリューション",
+    "about": "会社概要",
+    "contact": "お問い合わせ"
+  },
+  "Hero": {
+    "title1": "テクノロジーで",
+    "title2": "ビジネスの可能性を",
+    "title3": "最大化",
+    "title4": "する",
+    "description1": "最新の技術とビジネス知見を組み合わせ、",
+    "description2": "企業の課題解決と成長を支援するテクノロジー企業です。",
+    "viewSolutions": "ソリューションを見る",
+    "consult": "相談する"
+  },
+  "Contents": {
+    "title": "提供ソリューション",
+    "description": "AI技術を活用した実用的なソリューションで、お客様のビジネス課題を解決します",
+    "reportTool": {
+      "title": "レポート自動化ツール",
+      "description": "データ分析からレポート生成まで自動化し、意思決定プロセスを効率化するWebアプリケーション。",
+      "feature1": "データ可視化・分析",
+      "feature2": "AI駆動レポート生成",
+      "feature3": "カスタムダッシュボード",
+      "status": "開発中"
+    },
+    "mobileApp": {
+      "title": "モバイルアプリ開発",
+      "description": "機械学習、画像認識、自然言語処理を統合したモバイルアプリケーションの設計・開発。",
+      "feature1": "iOS/Android/Web対応",
+      "feature2": "リアルタイム画像認識",
+      "feature3": "パーソナライゼーション"
+    },
+    "customSolution": {
+      "title": "カスタムソリューション",
+      "description": "最新技術を活用したカスタムシステム、チャットボットの構築。",
+      "feature1": "企業向けチャットボット",
+      "feature2": "文書自動生成・要約",
+      "feature3": "API統合サポート"
+    }
+  },
+  "About": {
+    "title": "私たちについて",
+    "description": "技術とビジネス課題の架け橋となり、実用的で価値のあるソリューションを提供します。技術力と実装力を兼ね備えたチームが、お客様の成功をサポートします。",
+    "stats": {
+      "foundedYear": "結成年",
+      "projects": "開発プロジェクト",
+      "members": "メンバー",
+      "support": "サポート"
+    },
+    "features": {
+      "technology": {
+        "title": "技術力",
+        "description": "最新の技術を駆使し、Next.js、Python、クラウドインフラを活用した堅牢なシステム開発。"
+      },
+      "practicality": {
+        "title": "実用性",
+        "description": "技術的な可能性だけでなく、ビジネス価値と実装可能性を重視した現実的なソリューション提案。"
+      },
+      "quality": {
+        "title": "品質",
+        "description": "コードレビュー、テスト駆動開発、継続的インテグレーションによる高品質なソフトウェア開発。"
+      }
+    }
+  },
+  "Contact": {
+    "title": "お問い合わせ",
+    "description": "AI技術を活用したソリューション開発について、お気軽にご相談ください",
+    "consultTitle": "こんなご相談をお待ちしています",
+    "consult1": "技術を活用した業務効率化について相談したい",
+    "consult2": "既存システムに新機能を追加したい",
+    "consult3": "新規アプリケーションの開発を検討している",
+    "consult4": "技術的な実現可能性を確認したい",
+    "email": "メール",
+    "businessHours": "対応時間",
+    "businessHoursValue": "平日 9:00-18:00",
+    "businessHoursNote": "（土日祝日は翌営業日に返信いたします）",
+    "responseTime": "お問い合わせから24時間以内に返信いたします"
+  },
+  "Footer": {
+    "companyDescription": "技術とビジネス課題の架け橋となり、実用的なソリューションを提供します。",
+    "services": "サービス",
+    "reportSupport": "レポート支援",
+    "mobileAppDev": "モバイルアプリ開発",
+    "techSolutions": "テクノロジーソリューション",
+    "companyInfo": "企業情報",
+    "aboutUs": "会社概要",
+    "contactUs": "お問い合わせ",
+    "copyright": "© 2024 Company Name. All rights reserved."
+  },
+  "Metadata": {
+    "title": "Company Name - モダンソリューション",
+    "description": "ビジネスのためのAI駆動ソリューション。成長と効率性を推進する革新的な技術ソリューションを提供します。"
+  }
+}

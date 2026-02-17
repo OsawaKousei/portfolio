@@ -1,0 +1,97 @@
+{
+  "Header": {
+    "company": "Company",
+    "solutions": "Solutions",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title1": "Maximize",
+    "title2": "Business Potential",
+    "title3": "with Technology",
+    "title4": "",
+    "description1": "Combining cutting-edge technology with business insights,",
+    "description2": "we are a technology company that supports corporate problem-solving and growth.",
+    "viewSolutions": "View Solutions",
+    "consult": "Consult Us"
+  },
+  "Contents": {
+    "title": "Our Solutions",
+    "description": "Solve your business challenges with practical AI-powered solutions",
+    "reportTool": {
+      "title": "Report Automation Tool",
+      "description": "A web application that automates everything from data analysis to report generation, streamlining your decision-making process.",
+      "feature1": "Data Visualization & Analysis",
+      "feature2": "AI-Driven Report Generation",
+      "feature3": "Custom Dashboards",
+      "status": "In Development"
+    },
+    "mobileApp": {
+      "title": "Mobile App Development",
+      "description": "Design and development of mobile applications integrating machine learning, image recognition, and natural language processing.",
+      "feature1": "iOS/Android/Web Support",
+      "feature2": "Real-time Image Recognition",
+      "feature3": "Personalization"
+    },
+    "customSolution": {
+      "title": "Custom Solutions",
+      "description": "Building custom systems and chatbots utilizing the latest technologies.",
+      "feature1": "Enterprise Chatbots",
+      "feature2": "Automated Document Generation & Summarization",
+      "feature3": "API Integration Support"
+    }
+  },
+  "About": {
+    "title": "About Us",
+    "description": "We bridge the gap between technology and business challenges, providing practical and valuable solutions. Our team, equipped with both technical expertise and implementation capabilities, supports your success.",
+    "stats": {
+      "foundedYear": "Founded",
+      "projects": "Projects",
+      "members": "Members",
+      "support": "Support"
+    },
+    "features": {
+      "technology": {
+        "title": "Technical Excellence",
+        "description": "Robust system development leveraging cutting-edge technologies including Next.js, Python, and cloud infrastructure."
+      },
+      "practicality": {
+        "title": "Practicality",
+        "description": "Realistic solution proposals that prioritize business value and feasibility, not just technical possibilities."
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "High-quality software development through code reviews, test-driven development, and continuous integration."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "description": "Feel free to consult us about solution development utilizing AI technology",
+    "consultTitle": "We welcome consultations like these",
+    "consult1": "Discuss business efficiency improvements using technology",
+    "consult2": "Add new features to existing systems",
+    "consult3": "Consider developing new applications",
+    "consult4": "Verify technical feasibility",
+    "email": "Email",
+    "businessHours": "Business Hours",
+    "businessHoursValue": "Weekdays 9:00-18:00",
+    "businessHoursNote": "(Inquiries on weekends and holidays will be answered on the next business day)",
+    "responseTime": "We will respond within 24 hours of your inquiry"
+  },
+  "Footer": {
+    "companyDescription": "We bridge the gap between technology and business challenges, providing practical solutions.",
+    "services": "Services",
+    "reportSupport": "Report Support",
+    "mobileAppDev": "Mobile App Development",
+    "techSolutions": "Technology Solutions",
+    "companyInfo": "Company Info",
+    "aboutUs": "About Us",
+    "contactUs": "Contact",
+    "copyright": "© 2024 Company Name. All rights reserved."
+  },
+  "Metadata": {
+    "title": "Company Name - Modern Solutions",
+    "description": "AI-powered solutions for your business. We provide innovative technology solutions to drive growth and efficiency."
+  }
+}
