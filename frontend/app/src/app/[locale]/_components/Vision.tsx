@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 function StatItem({ label, value }: { label: string; value: string }) {
   return (
@@ -46,9 +47,18 @@ export default function Vision() {
           <div className="grid md:grid-cols-2 gap-6">
             {/* KUPAC Card */}
             <div className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-8 hover:border-blue-500/30 transition-colors">
-              <div className="mb-4">
+              <div className="flex items-start justify-between gap-4 mb-4">
                 <span className="text-xs font-mono text-blue-400 tracking-wider uppercase">
                   {t('kupacLabel')}
+                </span>
+                <span className="relative w-14 h-14 shrink-0 rounded-full overflow-hidden border border-slate-600/60 bg-white/90">
+                  <Image
+                    src="/KUPAC_logo.png"
+                    alt="KUPAC logo"
+                    fill
+                    sizes="56px"
+                    className="object-contain p-1"
+                  />
                 </span>
               </div>
               <h4 className="text-lg font-bold text-white mb-1">
@@ -69,9 +79,18 @@ export default function Vision() {
 
             {/* KVT Card */}
             <div className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-8 hover:border-cyan-500/30 transition-colors">
-              <div className="mb-4">
+              <div className="flex items-start justify-between gap-4 mb-4">
                 <span className="text-xs font-mono text-cyan-400 tracking-wider uppercase">
                   {t('kvtLabel')}
+                </span>
+                <span className="relative w-14 h-14 shrink-0 rounded-lg overflow-hidden border border-slate-700/80 bg-black">
+                  <Image
+                    src="/KVT_logo.png"
+                    alt="KVT logo"
+                    fill
+                    sizes="56px"
+                    className="object-contain p-1.5"
+                  />
                 </span>
               </div>
               <h4 className="text-lg font-bold text-white mb-1">

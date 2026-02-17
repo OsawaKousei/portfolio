@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { Link, usePathname } from '@/navigation';
 
 export default function Header() {
@@ -11,7 +12,16 @@ export default function Header() {
     <header className="bg-slate-900/80 backdrop-blur-md border-b border-slate-700/30 sticky top-0 z-50">
       <div className="container mx-auto px-6 h-16 flex items-center">
         <nav className="flex justify-between items-center w-full">
-          <a href="#" className="text-lg font-bold text-white tracking-tight">
+          <a href="#" className="flex items-center gap-2.5 text-lg font-bold text-white tracking-tight">
+            <span className="relative w-8 h-8 rounded-lg overflow-hidden border border-slate-600/60">
+              <Image
+                src="/icon.jpg"
+                alt="Kosei Osawa icon"
+                fill
+                sizes="32px"
+                className="object-cover"
+              />
+            </span>
             {t('name')}
           </a>
           <div className="hidden md:flex items-center gap-6">

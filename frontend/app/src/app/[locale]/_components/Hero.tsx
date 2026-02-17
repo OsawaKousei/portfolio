@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
@@ -37,6 +38,27 @@ export default function Hero() {
 
         {/* Name & Role */}
         <div className="mb-10">
+          <div className="relative w-24 h-24 md:w-28 md:h-28 mx-auto mb-5">
+            <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-slate-500/60 shadow-lg">
+              <Image
+                src="/face.jpg"
+                alt="Kosei Osawa"
+                fill
+                sizes="(max-width: 768px) 96px, 112px"
+                className="object-cover"
+                priority
+              />
+            </div>
+            <div className="absolute -bottom-1 -right-1 w-8 h-8 rounded-md overflow-hidden border border-slate-500 bg-slate-800">
+              <Image
+                src="/icon.jpg"
+                alt="Personal icon"
+                fill
+                sizes="32px"
+                className="object-cover"
+              />
+            </div>
+          </div>
           <h2 className="text-xl md:text-2xl font-semibold gradient-text mb-2">
             {t('name')}
           </h2>
