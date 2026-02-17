@@ -11,9 +11,13 @@ import {
   Bot,
   ChevronDown,
   ExternalLink,
-  Play,
-  ImageIcon,
 } from 'lucide-react';
+
+interface ProjectMedia {
+  type: 'image' | 'video';
+  src: string;
+  alt?: string;
+}
 
 interface ProjectItem {
   title: string;
@@ -22,6 +26,7 @@ interface ProjectItem {
   tags: string[];
   link?: string;
   status?: string;
+  media?: ProjectMedia[];
 }
 
 interface PortfolioCategory {
@@ -33,6 +38,12 @@ interface PortfolioCategory {
   accentColor: string;
   accentBg: string;
 }
+
+const parseTags = (value: string) =>
+  value
+    .split(',')
+    .map((tag) => tag.trim())
+    .filter(Boolean);
 
 function AccordionPanel({ category }: { category: PortfolioCategory }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -159,19 +170,36 @@ function AccordionPanel({ category }: { category: PortfolioCategory }) {
                 {item.detail}
               </p>
 
-              {/* Media placeholders */}
-              <div className="grid grid-cols-2 gap-3">
-                {/* Thumbnail placeholder */}
-                <div className="aspect-video bg-slate-800 border border-slate-700/50 rounded-lg flex flex-col items-center justify-center gap-2 text-slate-600">
-                  <ImageIcon className="w-6 h-6" />
-                  <span className="text-[10px]">Screenshot</span>
+              {/* Media */}
+              {(item.media?.filter((media) => media.src).length ?? 0) > 0 && (
+                <div
+                  className={`grid gap-3 ${(item.media?.filter((media) => media.src).length ?? 0) === 1 ? 'grid-cols-1' : 'grid-cols-2'}`}
+                >
+                  {item.media
+                    ?.filter((media) => media.src)
+                    .map((media, mediaIndex) => (
+                      <div
+                        key={`${item.title}-${mediaIndex}`}
+                        className="aspect-video bg-slate-800 border border-slate-700/50 rounded-lg overflow-hidden"
+                      >
+                        {media.type === 'video' ? (
+                          <video
+                            src={media.src}
+                            controls
+                            preload="metadata"
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <img
+                            src={media.src}
+                            alt={media.alt ?? item.title}
+                            className="w-full h-full object-cover"
+                          />
+                        )}
+                      </div>
+                    ))}
                 </div>
-                {/* Video placeholder */}
-                <div className="aspect-video bg-slate-800 border border-slate-700/50 rounded-lg flex flex-col items-center justify-center gap-2 text-slate-600">
-                  <Play className="w-6 h-6" />
-                  <span className="text-[10px]">Demo Video</span>
-                </div>
-              </div>
+              )}
 
               {/* Link */}
               {item.link && (
@@ -219,14 +247,15 @@ export default function Portfolio() {
           title: t('webItem1Title'),
           description: t('webItem1Desc'),
           detail: t('webItem1Detail'),
-          tags: t('webItem1Tags').split(','),
+          tags: parseTags(t('webItem1Tags')),
           status: t('webItem1Status'),
+          link: 'https://repot.genz-ai.com/',
         },
         {
           title: t('webItem2Title'),
           description: t('webItem2Desc'),
           detail: t('webItem2Detail'),
-          tags: t('webItem2Tags').split(','),
+          tags: parseTags(t('webItem2Tags')),
           link: 'https://www.kupac.org/ja/',
         },
       ],
@@ -243,14 +272,14 @@ export default function Portfolio() {
           title: t('nativeItem1Title'),
           description: t('nativeItem1Desc'),
           detail: t('nativeItem1Detail'),
-          tags: t('nativeItem1Tags').split(','),
+          tags: parseTags(t('nativeItem1Tags')),
           link: 'https://4hack.jp/',
         },
         {
           title: t('nativeItem2Title'),
           description: t('nativeItem2Desc'),
           detail: t('nativeItem2Detail'),
-          tags: t('nativeItem2Tags').split(','),
+          tags: parseTags(t('nativeItem2Tags')),
           status: t('nativeItem2Status'),
         },
       ],
@@ -267,14 +296,14 @@ export default function Portfolio() {
           title: t('systemItem1Title'),
           description: t('systemItem1Desc'),
           detail: t('systemItem1Detail'),
-          tags: t('systemItem1Tags').split(','),
+          tags: parseTags(t('systemItem1Tags')),
           link: 'https://github.com/OsawaKousei/Basys3-Hack-PC',
         },
         {
           title: t('systemItem2Title'),
           description: t('systemItem2Desc'),
           detail: t('systemItem2Detail'),
-          tags: t('systemItem2Tags').split(','),
+          tags: parseTags(t('systemItem2Tags')),
           link: 'https://github.com/OsawaKousei/TinyUSDWebGPUSample',
         },
       ],
@@ -291,13 +320,13 @@ export default function Portfolio() {
           title: t('infraItem1Title'),
           description: t('infraItem1Desc'),
           detail: t('infraItem1Detail'),
-          tags: t('infraItem1Tags').split(','),
+          tags: parseTags(t('infraItem1Tags')),
         },
         {
           title: t('infraItem2Title'),
           description: t('infraItem2Desc'),
           detail: t('infraItem2Detail'),
-          tags: t('infraItem2Tags').split(','),
+          tags: parseTags(t('infraItem2Tags')),
           status: t('infraItem2Status'),
         },
       ],
@@ -314,14 +343,14 @@ export default function Portfolio() {
           title: t('aiItem1Title'),
           description: t('aiItem1Desc'),
           detail: t('aiItem1Detail'),
-          tags: t('aiItem1Tags').split(','),
+          tags: parseTags(t('aiItem1Tags')),
           status: t('aiItem1Status'),
         },
         {
           title: t('aiItem2Title'),
           description: t('aiItem2Desc'),
           detail: t('aiItem2Detail'),
-          tags: t('aiItem2Tags').split(','),
+          tags: parseTags(t('aiItem2Tags')),
         },
       ],
     },
@@ -337,14 +366,14 @@ export default function Portfolio() {
           title: t('roboticsItem1Title'),
           description: t('roboticsItem1Desc'),
           detail: t('roboticsItem1Detail'),
-          tags: t('roboticsItem1Tags').split(','),
+          tags: parseTags(t('roboticsItem1Tags')),
           link: 'https://github.com/OsawaKousei/2DRoboPrac_ws',
         },
         {
           title: t('roboticsItem2Title'),
           description: t('roboticsItem2Desc'),
           detail: t('roboticsItem2Detail'),
-          tags: t('roboticsItem2Tags').split(','),
+          tags: parseTags(t('roboticsItem2Tags')),
           link: 'https://github.com/OsawaKousei/standalone_auto_drive_ws',
         },
       ],

@@ -75,6 +75,16 @@ export default function Vision() {
                 <StatItem label={t('kupacStat2Label')} value={t('kupacStat2Value')} />
                 <StatItem label={t('kupacStat3Label')} value={t('kupacStat3Value')} />
               </div>
+              <div className="mt-5 pt-4 border-t border-slate-700/50 flex flex-wrap gap-3">
+                <a
+                  href="https://www.kupac.org/ja/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-xs text-blue-300 hover:text-blue-200 transition-colors"
+                >
+                  {t('officialWebsite')} ↗
+                </a>
+              </div>
             </div>
 
             {/* KVT Card */}
@@ -106,6 +116,24 @@ export default function Vision() {
                 <StatItem label={t('kvtStat1Label')} value={t('kvtStat1Value')} />
                 <StatItem label={t('kvtStat2Label')} value={t('kvtStat2Value')} />
                 <StatItem label={t('kvtStat3Label')} value={t('kvtStat3Value')} />
+              </div>
+              <div className="mt-5 pt-4 border-t border-slate-700/50 flex flex-wrap gap-3">
+                <a
+                  href="https://www.kvt.jp/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-xs text-cyan-300 hover:text-cyan-200 transition-colors"
+                >
+                  {t('officialWebsite')} ↗
+                </a>
+                <a
+                  href="https://github.com/KyotoVLATech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-xs text-slate-300 hover:text-white transition-colors"
+                >
+                  GitHub ↗
+                </a>
               </div>
             </div>
           </div>
