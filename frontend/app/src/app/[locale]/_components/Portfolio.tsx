@@ -422,7 +422,10 @@ export default function Portfolio() {
           description: t('roboticsItem3Desc'),
           detail: t('roboticsItem3Detail'),
           tags: parseTags(t('roboticsItem3Tags')),
-          link: 'https://github.com/OsawaKousei/2DRoboPrac_ws',
+          links: [
+            'https://github.com/OsawaKousei/2DRoboPrac_ws',
+            'https://qiita.com/N622/items/6ca879f8b1f9d667e561',
+          ],
           media: [
             {
               type: 'image',

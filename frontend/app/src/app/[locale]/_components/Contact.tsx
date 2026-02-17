@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Mail, Github, Twitter } from 'lucide-react';
+import { Mail, Github, Twitter, Linkedin } from 'lucide-react';
 
 export default function Contact() {
   const t = useTranslations('Contact');
@@ -82,12 +82,28 @@ export default function Contact() {
               </p>
             </a>
 
+            {/* LinkedIn */}
+            <a
+              href={t('linkedin')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6 hover:border-slate-600 transition-colors group"
+            >
+              <div className="flex items-center gap-3 mb-2">
+                <Linkedin className="w-5 h-5 text-slate-400 group-hover:text-white transition-colors" />
+                <h3 className="text-sm font-semibold text-white">{t('linkedinLabel')}</h3>
+              </div>
+              <p className="text-sm text-slate-500 group-hover:text-slate-400 transition-colors">
+                {t('linkedin').replace('https://www.linkedin.com/', 'linkedin.com/')}
+              </p>
+            </a>
+
             {/* Qiita */}
             <a
               href={`https://qiita.com/${t('qiita').replace('@', '')}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6 hover:border-slate-600 transition-colors group sm:col-span-2"
+              className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6 hover:border-slate-600 transition-colors group"
             >
               <div className="flex items-center gap-3 mb-2">
                 <span className="w-5 h-5 text-slate-400 group-hover:text-white transition-colors font-bold text-sm flex items-center justify-center">

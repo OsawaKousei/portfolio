@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             {/* Brand */}
             <div>
-              <div className="text-lg font-bold text-white mb-3">Kosei Osawa</div>
+              <div className="text-lg font-bold text-white mb-3">Kousei Osawa</div>
               <p className="text-slate-500 text-sm leading-relaxed">
                 {t('description')}
               </p>

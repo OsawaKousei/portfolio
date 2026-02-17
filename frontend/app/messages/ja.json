@@ -1,17 +1,17 @@
 {
   "Header": {
-    "name": "Kosei Osawa",
+    "name": "Kousei Osawa",
     "projects": "Projects",
     "vision": "Vision",
     "timeline": "Timeline",
     "contact": "Contact"
   },
   "Hero": {
-    "headline": "Bridging Economics, Deep Tech, and Implementation.",
-    "headlineJa": "経済学とエンジニアリングの交差点から、フィジカルAIの社会実装に取り組んでいます。",
-    "name": "Kosei Osawa",
-    "role": "Physical AI Engineer / Tech Lead",
-    "affiliation": "Kyoto Univ. Economics | NEDO NEP Fellow",
+    "headline": "Management × Engineering: Powering Physical AI.",
+    "headlineJa": "経営のインサイトと技術の卓越性を融合し、フィジカルAIの社会実装に取り組んでいます。",
+    "name": "Kousei Osawa",
+    "role": "Full-Stack Engineer & Physical AI Architect",
+    "affiliation": "Kyoto Univ. Economics | NEDO NEP FR",
     "ctaPrimary": "View Projects",
     "ctaSecondary": "Read Vision"
   },
@@ -115,7 +115,7 @@
     "roboticsItem2Title": "Custom Autonomy Stack",
     "roboticsItem2Desc": "C++フルスクラッチの自律走行アルゴリズム+シミュレーター",
     "roboticsItem2Detail": "自己位置推定、経路計画、経路追従をC++でフルスクラッチ実装した自律走行スタック。独自のシミュレーション環境も構築し、アルゴリズムの検証と可視化を行う。",
-    "roboticsItem2Tags": "C++,自律走行,SLAM,経路計画,シミュレーション",
+    "roboticsItem2Tags": "C++",
     "roboticsItem3Title": "ROS 2 Navigation System",
     "roboticsItem3Desc": "ROS 2・Gazebo・Navigation 2を用いた自律走行システムの開発",
     "roboticsItem3Detail": "ROS 2を基盤に、Gazeboシミュレーション環境とNavigation 2を組み合わせた自律走行システムを構築。マップ上での経路追従と障害物回避を含む一連のナビゲーション動作を実装。",
@@ -157,11 +157,13 @@
     "github": "OsawaKousei",
     "twitterLabel": "X (Twitter)",
     "twitter": "@sawa__622",
+    "linkedinLabel": "LinkedIn",
+    "linkedin": "https://www.linkedin.com/in/osawakousei",
     "qiitaLabel": "Qiita",
     "qiita": "@N622"
   },
   "Footer": {
-    "description": "経済学とエンジニアリングの交差点から、フィジカルAIの社会実装に取り組んでいます。",
+    "description": "Management × Engineeringで、フィジカルAIの社会実装を推進しています。",
     "sections": "Sections",
     "vision": "Vision",
     "projects": "Projects",
@@ -171,10 +173,10 @@
     "github": "GitHub",
     "twitter": "X (Twitter)",
     "qiita": "Qiita",
-    "copyright": "© 2025 Kosei Osawa. All rights reserved."
+    "copyright": "© 2026 Kousei Osawa. All rights reserved."
   },
   "Metadata": {
-    "title": "Kosei Osawa - Portfolio",
-    "description": "経済学とエンジニアリングの交差点から、フィジカルAIの社会実装に取り組むエンジニアのポートフォリオ。Kyoto Univ. Economics | NEDO NEP Fellow"
+    "title": "Kousei Osawa - Portfolio",
+    "description": "Management × Engineeringで、フィジカルAIの社会実装を推進するエンジニアのポートフォリオ。Kyoto Univ. Economics | NEDO NEP FR"
   }
 }

@@ -19,6 +19,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: messages.Metadata.title,
     description: messages.Metadata.description,
+    icons: {
+      icon: '/icon.jpg',
+      shortcut: '/icon.jpg',
+      apple: '/icon.jpg',
+    },
     alternates: {
       canonical: `${domain}/${locale}/`,
       languages: {
@@ -71,7 +76,7 @@ export default async function LocaleLayout({
     '@type': 'Person',
     name: 'Kosei Osawa',
     url: domain,
-    logo: `${domain}/logo.png`,
+    logo: `${domain}/icon.jpg`,
     description: t.Metadata?.description,
     jobTitle: 'Tech Lead & Physical AI Architect',
   };

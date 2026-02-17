@@ -1,17 +1,17 @@
 {
   "Header": {
-    "name": "Kosei Osawa",
+    "name": "Kousei Osawa",
     "projects": "Projects",
     "vision": "Vision",
     "timeline": "Timeline",
     "contact": "Contact"
   },
   "Hero": {
-    "headline": "Bridging Economics, Deep Tech, and Implementation.",
-    "headlineJa": "Working on real-world deployment of Physical AI, at the intersection of economics and engineering.",
-    "name": "Kosei Osawa",
-    "role": "Physical AI Engineer / Tech Lead",
-    "affiliation": "Kyoto Univ. Economics | NEDO NEP Fellow",
+    "headline": "Management × Engineering: Powering Physical AI.",
+    "headlineJa": "Integrating management insight with engineering excellence to deliver real-world Physical AI.",
+    "name": "Kousei Osawa",
+    "role": "Full-Stack Engineer & Physical AI Architect",
+    "affiliation": "Kyoto Univ. Economics | NEDO NEP FR",
     "ctaPrimary": "View Projects",
     "ctaSecondary": "Read Vision"
   },
@@ -115,7 +115,7 @@
     "roboticsItem2Title": "Custom Autonomy Stack",
     "roboticsItem2Desc": "Full-scratch autonomous driving algorithm + simulator in C++",
     "roboticsItem2Detail": "A full-scratch autonomous driving stack implementing self-localization, path planning, and path following in C++. Also built a custom simulation environment for algorithm verification and visualization.",
-    "roboticsItem2Tags": "C++,Autonomous Driving,SLAM,Path Planning,Simulation",
+    "roboticsItem2Tags": "C++",
     "roboticsItem3Title": "ROS 2 Navigation System",
     "roboticsItem3Desc": "Development of an autonomous navigation system using ROS 2, Gazebo, and Navigation 2",
     "roboticsItem3Detail": "Built an autonomous navigation system by combining ROS 2 with the Gazebo simulation environment and Navigation 2. Implemented end-to-end navigation behavior including path following and obstacle avoidance.",
@@ -133,7 +133,7 @@
     "e4Date": "2024.04",
     "e4Text": "Worked as OA at Morimoto Lab, Graduate School of Informatics, Kyoto University — Physical AI research",
     "e5Date": "2024.04",
-    "e5Text": "Appointed as NEDO NEP Frontier Course 2025 Fellow Researcher",
+    "e5Text": "Appointed as NEDO NEP Frontier Course 2025 FR",
     "e6Date": "2024.08",
     "e6Text": "Worked as AI Engineer at ProxIndustries Inc., a Matsuo Lab spinoff startup",
     "e7Date": "2025.04",
@@ -157,11 +157,13 @@
     "github": "OsawaKousei",
     "twitterLabel": "X (Twitter)",
     "twitter": "@sawa__622",
+    "linkedinLabel": "LinkedIn",
+    "linkedin": "https://www.linkedin.com/in/osawakousei",
     "qiitaLabel": "Qiita",
     "qiita": "@N622"
   },
   "Footer": {
-    "description": "Bridging Economics, Deep Tech, and Implementation.",
+    "description": "Management × Engineering: Powering Physical AI.",
     "sections": "Sections",
     "vision": "Vision",
     "projects": "Projects",
@@ -171,10 +173,10 @@
     "github": "GitHub",
     "twitter": "X (Twitter)",
     "qiita": "Qiita",
-    "copyright": "© 2025 Kosei Osawa. All rights reserved."
+    "copyright": "© 2026 Kousei Osawa. All rights reserved."
   },
   "Metadata": {
-    "title": "Kosei Osawa - Portfolio",
-    "description": "Portfolio of an engineer working on real-world deployment of Physical AI, at the intersection of economics and engineering. Kyoto Univ. Economics | NEDO NEP Fellow"
+    "title": "Kousei Osawa - Portfolio",
+    "description": "Portfolio of an engineer driving real-world Physical AI through Management × Engineering. Kyoto Univ. Economics | NEDO NEP FR"
   }
 }
