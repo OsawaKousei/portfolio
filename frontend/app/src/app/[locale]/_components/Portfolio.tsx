@@ -25,6 +25,7 @@ interface ProjectItem {
   detail: string;
   tags: string[];
   link?: string;
+  links?: string[];
   status?: string;
   media?: ProjectMedia[];
 }
@@ -119,6 +120,10 @@ function AccordionPanel({ category }: { category: PortfolioCategory }) {
           <div className="border-t border-slate-700/50" />
 
           {category.items.map((item, idx) => (
+            (() => {
+              const projectLinks = item.links?.length ? item.links : item.link ? [item.link] : [];
+
+              return (
             <div
               key={idx}
               className="bg-slate-900/40 border border-slate-700/30 rounded-lg p-5 space-y-4"
@@ -140,9 +145,9 @@ function AccordionPanel({ category }: { category: PortfolioCategory }) {
                     {item.description}
                   </p>
                 </div>
-                {item.link && (
+                {projectLinks.length > 0 && (
                   <a
-                    href={item.link}
+                    href={projectLinks[0]}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-slate-500 hover:text-blue-400 transition-colors shrink-0 p-1"
@@ -202,20 +207,27 @@ function AccordionPanel({ category }: { category: PortfolioCategory }) {
               )}
 
               {/* Link */}
-              {item.link && (
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs text-blue-400/70 hover:text-blue-400 transition-colors"
-                >
-                  <ExternalLink className="w-3 h-3" />
-                  {item.link
-                    .replace('https://', '')
-                    .replace('http://', '')}
-                </a>
+              {projectLinks.length > 0 && (
+                <div className="flex flex-wrap gap-2">
+                  {projectLinks.map((projectLink) => (
+                    <a
+                      key={projectLink}
+                      href={projectLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs text-blue-400/70 hover:text-blue-400 transition-colors"
+                    >
+                      <ExternalLink className="w-3 h-3" />
+                      {projectLink
+                        .replace('https://', '')
+                        .replace('http://', '')}
+                    </a>
+                  ))}
+                </div>
               )}
             </div>
+              );
+            })()
           ))}
 
           {/* Collapse button at bottom */}
@@ -273,6 +285,7 @@ export default function Portfolio() {
           description: t('nativeItem1Desc'),
           detail: t('nativeItem1Detail'),
           tags: parseTags(t('nativeItem1Tags')),
+          status: t('nativeItem1Status'),
           link: 'https://4hack.jp/',
         },
         {
@@ -352,6 +365,13 @@ export default function Portfolio() {
           detail: t('aiItem2Detail'),
           tags: parseTags(t('aiItem2Tags')),
         },
+        {
+          title: t('aiItem3Title'),
+          description: t('aiItem3Desc'),
+          detail: t('aiItem3Detail'),
+          tags: parseTags(t('aiItem3Tags')),
+          link: 'https://github.com/OsawaKousei/julia_ml_from_scrach',
+        },
       ],
     },
     {
@@ -367,7 +387,22 @@ export default function Portfolio() {
           description: t('roboticsItem1Desc'),
           detail: t('roboticsItem1Detail'),
           tags: parseTags(t('roboticsItem1Tags')),
-          link: 'https://github.com/OsawaKousei/2DRoboPrac_ws',
+          media: [
+            {
+              type: 'image',
+              src: '/features/nhk_2025_team.jpg',
+              alt: 'NHK Student Robocon 2025 team photo',
+            },
+            {
+              type: 'image',
+              src: '/features/nhk2025_robot.jpg',
+              alt: 'NHK Student Robocon 2025 robot photo',
+            },
+          ],
+          links: [
+            'https://github.com/OsawaKousei/nhk2025_arm_controller',
+            'https://github.com/OsawaKousei/nhk_2025_arm_ctrl',
+          ],
         },
         {
           title: t('roboticsItem2Title'),
@@ -375,6 +410,31 @@ export default function Portfolio() {
           detail: t('roboticsItem2Detail'),
           tags: parseTags(t('roboticsItem2Tags')),
           link: 'https://github.com/OsawaKousei/standalone_auto_drive_ws',
+          media: [
+            {
+              type: 'video',
+              src: '/features/autodrive.mp4',
+            },
+          ],
+        },
+        {
+          title: t('roboticsItem3Title'),
+          description: t('roboticsItem3Desc'),
+          detail: t('roboticsItem3Detail'),
+          tags: parseTags(t('roboticsItem3Tags')),
+          link: 'https://github.com/OsawaKousei/2DRoboPrac_ws',
+          media: [
+            {
+              type: 'image',
+              src: '/features/nav2.jpg',
+              alt: 'Navigation 2 autonomous navigation',
+            },
+            {
+              type: 'image',
+              src: '/features/gazebo.jpg',
+              alt: 'Gazebo simulation environment',
+            },
+          ],
         },
       ],
     },
