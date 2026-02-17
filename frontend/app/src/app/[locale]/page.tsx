@@ -12,7 +12,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   setRequestLocale(locale);
 
   return (
-    <div className="min-h-screen bg-gray-950">
+    <div className="min-h-screen bg-slate-900">
       <Header />
       <Hero />
       <div className="section-divider"></div>

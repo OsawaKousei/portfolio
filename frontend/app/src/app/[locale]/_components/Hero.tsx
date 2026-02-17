@@ -12,8 +12,8 @@ export default function Hero() {
       <div className="absolute inset-0 grid-bg" />
 
       {/* Gradient orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/8 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/8 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/6 rounded-full blur-3xl" />
 
       {/* Background image placeholder */}
       <div className="absolute inset-0 z-0 opacity-10">
@@ -31,7 +31,7 @@ export default function Hero() {
         </h1>
 
         {/* Japanese sub-headline */}
-        <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-base sm:text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
           {t('headlineJa')}
         </p>
 
@@ -40,10 +40,10 @@ export default function Hero() {
           <h2 className="text-xl md:text-2xl font-semibold gradient-text mb-2">
             {t('name')}
           </h2>
-          <p className="text-sm md:text-base text-gray-400">
+          <p className="text-sm md:text-base text-slate-400">
             {t('role')}
           </p>
-          <p className="text-sm text-gray-500 mt-1">
+          <p className="text-sm text-slate-500 mt-1">
             {t('affiliation')}
           </p>
         </div>
@@ -61,7 +61,7 @@ export default function Hero() {
             asChild
             variant="outline"
             size="lg"
-            className="border border-gray-700 text-gray-300 bg-transparent hover:bg-gray-800 hover:text-white transition-all px-8"
+            className="border border-slate-600 text-slate-300 bg-transparent hover:bg-slate-800 hover:text-white transition-all px-8"
           >
             <a href="#vision">{t('ctaSecondary')}</a>
           </Button>
@@ -70,8 +70,8 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-5 h-8 border-2 border-gray-600 rounded-full flex justify-center pt-1.5">
-          <div className="w-1 h-2 bg-gray-500 rounded-full" />
+        <div className="w-5 h-8 border-2 border-slate-500 rounded-full flex justify-center pt-1.5">
+          <div className="w-1 h-2 bg-slate-400 rounded-full" />
         </div>
       </div>
     </section>

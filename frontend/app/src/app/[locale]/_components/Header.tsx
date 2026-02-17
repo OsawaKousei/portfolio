@@ -8,7 +8,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="bg-gray-950/80 backdrop-blur-md border-b border-white/5 sticky top-0 z-50">
+    <header className="bg-slate-900/80 backdrop-blur-md border-b border-slate-700/30 sticky top-0 z-50">
       <div className="container mx-auto px-6 h-16 flex items-center">
         <nav className="flex justify-between items-center w-full">
           <a href="#" className="text-lg font-bold text-white tracking-tight">
@@ -17,19 +17,19 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-6">
             <a
               href="#vision"
-              className="text-sm text-gray-400 hover:text-white transition-colors"
+              className="text-sm text-slate-400 hover:text-white transition-colors"
             >
               {t('vision')}
             </a>
             <a
               href="#portfolio"
-              className="text-sm text-gray-400 hover:text-white transition-colors"
+              className="text-sm text-slate-400 hover:text-white transition-colors"
             >
               {t('projects')}
             </a>
             <a
               href="#timeline"
-              className="text-sm text-gray-400 hover:text-white transition-colors"
+              className="text-sm text-slate-400 hover:text-white transition-colors"
             >
               {t('timeline')}
             </a>
@@ -44,15 +44,15 @@ export default function Header() {
               <Link
                 href={pathname}
                 locale="ja"
-                className="text-gray-500 hover:text-white transition-colors px-1.5 py-0.5 rounded"
+                className="text-slate-500 hover:text-white transition-colors px-1.5 py-0.5 rounded"
               >
                 JP
               </Link>
-              <span className="text-gray-700">|</span>
+              <span className="text-slate-600">|</span>
               <Link
                 href={pathname}
                 locale="en"
-                className="text-gray-500 hover:text-white transition-colors px-1.5 py-0.5 rounded"
+                className="text-slate-500 hover:text-white transition-colors px-1.5 py-0.5 rounded"
               >
                 EN
               </Link>

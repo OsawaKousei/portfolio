@@ -32,7 +32,7 @@ export default function Timeline() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               {t('title')}
             </h2>
-            <p className="text-gray-400 text-base">
+            <p className="text-slate-400 text-base">
               {t('subtitle')}
             </p>
           </div>
@@ -45,14 +45,14 @@ export default function Timeline() {
                 className="relative pb-8 last:pb-0"
               >
                 {/* Dot */}
-                <div className="absolute left-[-25px] top-1 w-4 h-4 rounded-full bg-gray-950 border-2 border-blue-500 z-10" />
+                <div className="absolute left-[-25px] top-1 w-4 h-4 rounded-full bg-slate-900 border-2 border-blue-500 z-10" />
 
                 {/* Content */}
                 <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
                   <span className="text-xs font-mono text-blue-400 shrink-0 min-w-[70px]">
                     {event.date}
                   </span>
-                  <p className="text-sm text-gray-300 leading-relaxed">
+                  <p className="text-sm text-slate-300 leading-relaxed">
                     {event.text}
                   </p>
                 </div>
